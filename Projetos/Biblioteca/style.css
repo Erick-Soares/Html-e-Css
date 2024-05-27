@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    font:bold 16px Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #d42582, #62C9F4, #3e4bae);
+}
+
+.link{
+    text-decoration: none;
+    color: blue;
+}
+
+.nomeL{
+    text-decoration: none;
+    color: white;
+}
+
+.alinhar{
+display: inline-flex;
+justify-content: space-between;
+text-align: center;
+}

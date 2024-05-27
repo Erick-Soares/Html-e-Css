@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+
+body{
+    background-image: linear-gradient(to right, rgb(44, 44, 253), rgb(119, 119, 253), rgb(163, 163, 243));
+}
+
+main{
+    background-color: rgb(128, 128, 128);
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    border: 10px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+main > p > a{
+    text-decoration: none;
+    color: rgb(104, 60, 142);
+    padding-top: 10px;
+}
+
+
+
+

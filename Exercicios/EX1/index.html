@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginao</title>
+
+</head>
+<body>
+
+    <h1><em>Esta é minha primeira pagina</em></h1>
+
+    <br>
+    <button><a href="index2.html">Pular pagina?</a></button>
+    <button><a href="index.html">Nao pular</a></button>
+
+    <p>Testando imagens dinamicas</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="Sem título.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="ImgM.jpg" type="image/jpg">
+        <img src="ImgG.jpg" alt="Imagem">
+    </picture>
+
+
+    <h1><em>Testando audios</em></h1>
+
+    <audio preload="metadata" controls loop>
+        <source src="happy-mistake.mp3" type="audio/mpeg">
+        <p>Esse navegador nao pega arq wav</p>
+    </audio>
+    
+    <br>
+    <br>
+    
+    <video preload="none" controls width="400px" poster="ImgM.jpg" loop>
+        <source src="cachorro.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>

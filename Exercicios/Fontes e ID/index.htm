@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes e ID</title>
+
+    <style>
+
+        body{
+            font:bold 1em Arial, sans-serif; 
+        }
+
+        a{
+            font:bold 1em Times New Roman, sans-serif;
+            text-decoration: none;
+            color: aqua;
+        }
+
+        a:hover{
+            color:darkmagenta;
+            text-decoration: double;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+
+        #esp{
+            font-size: 3em;
+            color: darkred;
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Configurando Pseudo-classes!</h1>
+
+            <p>Para acessar meu site oficial acesse
+                <a href="https://www.concursosmilitares.com.br/provas-anteriores/exercito/espcex/">
+                esse link.</a>        
+            </p>
+
+
+    <p>Para acessar o youtube acesse
+        <a href="https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21">
+            esse link.</a>
+    </p>
+
+    <p><a href="https://www.pciconcursos.com.br/">Texto aleatorio.</a></p>
+
+    
+
+    <div>
+        Passe o mouse aqui.
+       <p id="esp">CORNO</p>
+    </div>
+
+</body>
+</html>

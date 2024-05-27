@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    font: bold 1em Arial, Helvetica,sans-serif;
+    background-image: linear-gradient(to left, #DFE4DD, #9CA185 50%, #BE8983, #9D564D);
+}
+
+.PrincipalDiv{
+    padding-top: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Botao{
+    background-color: #BE8983;
+    height: 40px;
+    width: 100px;
+}
+
+.botright{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botleft{
+    display: flex;
+    justify-content: left;
+}
+
+#box{
+    background-color: darkgray;
+    height: 400px;
+    width: 320px;
+    margin: auto;
+    padding: 55px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.centralTexto{
+    text-align: center;
+}

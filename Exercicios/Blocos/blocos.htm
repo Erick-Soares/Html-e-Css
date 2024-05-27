@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos de Div</title>
+
+    <style>
+
+        body{
+            background-image: linear-gradient(to left, darkblue, rgb(43, 106, 43), rgb(255, 192, 203));
+        }
+
+        div {
+            display: inline-block;
+            text-align: center;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .esp {
+            display: inline-block;
+            display: none;
+        }
+
+        div>p {
+            font-family: Arial, sans-serif;
+
+        }
+
+        .er {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: whitesmoke;
+        }
+
+        div:hover>.esp {
+            display: block;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(83, 0, 139);
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Selecione um dos blocos!</h1>
+
+    <!--
+    UNICO PROBLEMA É QUE QUANDO TOCO EM UM DOS PARAGRAFOS, OS OUTROS DESCEM JUNTO COM
+    O CONTEUDO DO PARAGRAFO MARCADO.
+-->
+
+    <div>
+        <p>Bloco 1</p>
+        <div class="esp"><a href="https://www.alura.com.br/planos-cursos-online" class="er" target="_blank">Alura</a></div>
+    </div>
+
+    <div>
+        <p>Bloco 2</p>
+        <div class="esp"><a href="https://www.fbonline.com.br/cursos/ita-e-ime" class="er" target="_blank">FB Online</a></div>
+        
+    </div>
+
+    <div>
+        <p>Bloco 3</p>
+        <div class="esp">
+            <a href="https://www.fiap.com.br/" class="er" target="_blank">FIAP</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
