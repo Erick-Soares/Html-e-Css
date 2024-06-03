@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        footer > p{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="centralizado">
+
+    <h1>Zero's Library</h1>
+
+        <p>Email: <input type="email" id="emailL"></input></p>
+        <p>Senha: <input type="password" id="senhaL"></input></p>
+        <input type="button" value="Logar" onclick="logar()">
+
+        <p><a href="recupeSenha.html" class="link" target="_self">Esqueceu a senha?</a></p>
+        <p><a href="cadastra.html" target="_self" class="link">Novo por aqui?</a></p>
+        
+    </div>
+
+    <script>
+
+        var hs = new Map();
+        //RECEIO QUE ESSE MAP NÃO GUARDE TANTA INFORMAÇÃO QUANTO EU ESPERO QUE ELE GUARDE
+
+
+        function cadastrar(){
+
+        var emailC = document.getElementById('emailC')
+        var senhaC = document.getElementById('senhaC')
+
+                
+        if(hs.has(emailC)){ 
+
+            alert('Usuario ja cadastrado, tente logar!')
+
+        } else {
+            hs.set(senhaC, emailC);
+            alert('Usuario cadastrado!')
+            window.location.href = "principal.html";
+        }
+
+
+        }
+
+        function logar(){
+
+            var emailL = document.getElementById('emailL')
+            var senhaL = document.getElementById('senhaL')
+
+            if(hs.has(emailL)){
+
+                alert('Usuario encontrado!')
+                window.location.href = "principal.html";
+
+            } else {
+
+                alert('Usuario não cadastrado, crie um cadastro!')
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>

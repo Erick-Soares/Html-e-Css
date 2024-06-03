@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        /*
+            COMO RESOLVER O PROBLEMA DA DIV MAPA??? 
+            DEIXAR ELA COM UMA LARGURA LIMITADA E PARA A DIREITA E MESMA ASSIM RESPONSIVO 
+        
+        */
 
     #Direita{
         text-align: right;
@@ -18,9 +23,24 @@
     }
 
     #mapa{
-        background-color: darkslategrey;
-        height: 550px;
-        width: 950px;
+        background-color: rgb(41, 70, 70);
+        position: relative;
+        padding: 0px 10px 400px 10px;
+        /*
+        COM AS CONFIGURAÇÕES DO MAPA E DO IFRAME, O MAPA ESTARÁ
+        RESPONSIVO
+        
+        */
+    }
+
+    #mapa > iframe{
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
     }
 
     </style>
@@ -31,7 +51,7 @@
     <!--BOTÕES-->
     <!--CONSERTAR IRREGULARIDADE-->
 
-    <div class="PrincipalDiv">
+    <header class="PrincipalDiv">
 
             <div class="botleft">
                 <button class="Botao"><a href="" class="links">Soluções</a></button>
@@ -43,25 +63,28 @@
             <button class="Botao"><a href="Login.html" class="links">Login</a></button>
         </div>
         
-    </div>
+    </header>
 
     <h1>Radar de Infraestrutura Regional</h1>
 
     <div id="mapa">
-        <!--
-            MAPA DEVE SER INTERATIVO(PODER MARCAR E SE CONFIGURAR AO TAMANHO DA TELA DO DISPOSITIVO)
-        -->
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s3iBtGe5CjE?si=sc50DQ25f1-T8wBc" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><
+            /iframe>
+
     </div>
 
 
 
-<div id="Direita">
-    <p><img src="circleBlack.png" alt="" class="imagem">Legenda</img></p>
-    
-    <p> <img src="circleRed.png" alt="" class="imagem"> Não Solucionado</p>
-    <p> <img src="circleYellow.png" alt="" class="imagem"> Em andamento</p>
-    <p> <img src="circleGreen.jpg" alt="" class="imagem"> Resolvido</p>
-</div>
+    <div id="Direita">
+        <p><img src="circleBlack.png" alt="" class="imagem">Legenda</img></p>
+        
+        <p> <img src="circleRed.png" alt="" class="imagem"> Não Solucionado</p>
+        <p> <img src="circleYellow.png" alt="" class="imagem"> Em andamento</p>
+        <p> <img src="circleGreen.jpg" alt="" class="imagem"> Resolvido</p>
+    </div>
 
 </body>
 </html>

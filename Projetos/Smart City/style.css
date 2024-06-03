@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
+:root{
+
+    --fontpadrao: cursive;
+
+
+}
+
 body{
-    font: bold 1em Arial, Helvetica,sans-serif;
+    font: bold 1em var(--fontpadrao);
     background-image: linear-gradient(to left, #DFE4DD, #9CA185 50%, #BE8983, #9D564D);
 }
 
 .PrincipalDiv{
-    padding-top: 10px;
+    padding-top: 5px;
     display: inline-flex;
     justify-content: space-between;
     display: flex;
@@ -16,6 +23,7 @@ body{
     background-color: #BE8983;
     height: 40px;
     width: 100px;
+
 }
 
 .botright{

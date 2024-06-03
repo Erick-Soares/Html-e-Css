@@ -1,5 +1,24 @@
 @charset 'UTF-8';
 
+@font-face {
+    font-family: 'Cute';
+    src: url(holiday_song/Holiday\ Song.ttf) format('truetype');
+    /*ESPERO QUE FUNCIONE*/
+}
+
+:root{
+
+    --cor1:#BFB9FF;
+    --cor2:#FFCFEA;
+    --cor3:#AFE9FF;
+    --corextra1:#CBFFE6;
+    --corextra2:#FEFFBE;
+    --fontepadrao: cursive;
+    --fontexterna:'Cute';
+
+}
+
+
 body{
     background-image: linear-gradient(to right, rgb(44, 44, 253), rgb(119, 119, 253), rgb(163, 163, 243));
 }

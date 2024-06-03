@@ -1,13 +1,47 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Library';
+    src: url(library_records/Library\ Records\ DEMO.ttf) format('ttp');
+}
+
+:root{
+
+    --cor1:#D35C9C; 
+    --cor2:#62C9F4;
+    --cor3:#555FA7;
+    --fontPadrao: 'cursive';
+    --fontNova:'Library';
+
+
+}
+
+
 body{
     font:bold 16px Helvetica, sans-serif;
     background-image: linear-gradient(to right, #d42582, #62C9F4, #3e4bae);
 }
 
+
+#centralizado{
+    height: 500px;
+    width: 350px;
+    background-image: linear-gradient(to right, #ffff006d, transparent);
+    text-align: center;
+    margin: auto;
+    padding: 14px;
+    border-radius: 30px;      
+    margin-top: 30px;
+}
+
+
 .link{
     text-decoration: none;
-    color: blue;
+    color: #2a39a8;
+}
+
+.link :active{
+    color: var(--cor3);
 }
 
 .nomeL{
